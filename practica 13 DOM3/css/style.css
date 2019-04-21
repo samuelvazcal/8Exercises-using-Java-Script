@@ -1,0 +1,38 @@
+h2
+{
+    color: blue;
+}
+#tablaAleatorios, th, td
+{
+    border: 2px solid black;
+    padding: 10px;
+    width: 25%;
+    text-align:  center;
+    margin: 25px 50px 75px 50px;
+}
+#tablaMultiplicar,th,td
+{
+    border: 2px solid black;
+    padding: 10px;
+    width: 15%;
+    text-align:  center;
+    margin: 25px 50px 75px 10px;   
+}
+#txtAreaTablas
+{
+    margin: 5px 50px 75px 10px;   
+}
+
+#barraProgreso 
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+#barra 
+{
+    width: 1%;
+    height: 30px;
+    background-color: rgb(6, 81, 131);
+    margin: 1px 50px 10px 10px; 
+  }

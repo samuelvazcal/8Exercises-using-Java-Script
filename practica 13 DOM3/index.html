@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!--A PARTIR DE AQUI PUEDES TRABAJAR-->
+    <h2>Practica 13 DOM Forms</h2>
+    <hr/>
+    <h3>Practica 1 - Mensaje</h3>
+    <p>
+        <label for="txtMensaje">Mensaje</label>
+        <input id="txtMensaje" type="text" name="txtMensaje">
+        <input id="btnMensaje" type="button" value="Mostrar Mensaje">
+    </p>
+    <hr/>
+    <h3>Practica2 - Suma de numeros</h3>
+    <p>
+        <label for="txtNumero1">Numero1:</label>
+        <input id="txtNumero1" type="text" name="txtNumero1">
+    </p>
+    <p>
+        <label for="txtNumero2">Numero2:</label>
+        <input id="txtNumero2" type="text" name="txtNumero2">
+    </p>
+    <p>
+        <input id="btnSumar" type="button" value="Suma Numeros">
+    </p>
+    <hr/>
+    <h3>Practica 3 - Casillas Semaforo</h3>
+    <form id="formPrincipal" action="">
+        <p>
+            <label for="txtCampo1">Campo 1:</label>
+            <input id="txtCampo1" type="text" name="txtCampo1">
+        </p>
+        <p>
+            <label for="txtCampo2">Campo 2:</label>
+            <input id="txtCampo2" type="text" name="txtCampo2">    
+        </p>
+        <p>
+            <label for="txtCampo3">Campo 3:</label>
+            <input id="txtCampo3" type="text" name="txtCampo3">    
+        </p>
+        <hr/>
+    </form>
+    <h3>Practica 4 - Tabla Numeros Aleatorios</h3>
+    <form id ="formAleatorios"action="" >
+        <p>
+            <label for="txtNumerosAleatorios">Cantidad de numeros aleatorios: </label>
+            <input id="txtNumerosAleatorios" type="text">
+            <input id="btnGenerarAleatorios"type="button" value="Generar">
+            <input id="btnBorrarAleatorios"type="button" value="Borrar">
+        </p>
+        <table id="tablaAleatorios" class="table head-dark">
+        <thead class="thead-dark">
+            <tr><!--define una fila-->
+                <th>Posicion</th><!--define una celda de encabezado header cell (contiene informacion de cabecera)-->
+                <th>Numero</th><!--td: define una celda estandar y contiene datos simples-->
+            </tr>
+        </thead>
+        </table>
+    </form>
+    <hr/>
+    <h3>Practica 5 - Tablas de Multiplicar</h3>
+    <div>
+        <p>
+            <label for="txtTabla">Tabla:</label>
+            <input id="txtTabla" type="text">
+        </p>
+        <p>
+            <label for="txtRango">Rango:</label>
+            <input id="txtRango" type="text">   
+        </p>
+        <p>
+            <input id="btnGenerarTablas"type="button" value="Generar Tablas de Multiplicar"> 
+        </p>
+        <table id="tablaMultiplicar" class="table head-dark">
+            <thead class="thead-dark">
+                <!--define una fila-->
+                    <!--<th>Encabezado1</th>define una celda de encabezado header cell (contiene informacion de cabecera)-->
+                    <!--<th>Encabezado2</th>td: define una celda estandar y contiene datos simples
+                    <th>Encabezado3</th>
+                    <th>Encabezado4</th>
+                    <th>Encabezado5</th>-->
+            </thead>
+        </table>
+        <!--<textarea name="txtAreaTablas" id="txtAreaTablas" cols="30" rows="10"></textarea>-->
+    </div>
+    <hr/>
+    <h3>Practica 6 - Machine Learning</h3>
+    <p>
+        <label for="txtDatosEntradaML">Cantidad a analizar: </label>
+        <input id="txtDatosEntradaML" type="text">
+    </p>
+    <p>
+        <input type="button" id="btnClustering" value="Clustering">
+    </p>
+    <hr/>
+    <h3>Practica 7-8 Numero Factorial - Numero Primo</h3>
+    <p>
+        <label for="txtNumeroFP">Numero a analizar: </label>
+        <input id="txtNumeroFP" type="text">
+        <input type="button" id="btnChecar" value="Checar">
+    </p>
+    <p>
+        <label for="txtFactorial">Factorial</label>
+        <input type="text" id="txtFactorial" value="">
+        <label for="txtPrimo">Primo</label>
+        <input type="text" id="txtPrimo" value="">
+    </p>
+    <hr/>
+    <h3>Practica 9 Serie Ordenada</h3>
+    <p>
+        <label for="txtSerieNumerica">Serie Numerica: </label>
+        <input id="txtSerieNumerica" type="text">
+    </p>
+    <p>
+        <div id="barraProgreso">
+            <div id="barra"></div>
+        </div>
+        <input type="button" id="btnOrdenar" value="Ordenar">
+    </p>
+    <p>
+        <input type="button" id="btnAscendente" value="Ascendente">
+        <input type="button" id="btnDescendente" value="Descendente">
+    </p>
+    <p>
+        <label for="txtSerieOrdenada1">Serie Ordenada Ascendente: </label>
+        <input id="txtSerieOrdenada1" type="text">
+    </p>
+    <p>
+        <label for="txtSerieOrdenada2">Serie Ordenada Descendente: </label>
+        <input id="txtSerieOrdenada2" type="text">
+    </p>
+    <hr/>
+    <h3>Practica 10 Metodos de Busqueda</h3>
+    <p>
+        <label for="txtSerieBusqueda">Serie para Busquedas: </label>
+        <input id="txtSerieBusqueda" type="text">
+    </p>
+    <p>
+        <label for="txtNumeroBusqueda">Numero a Buscar: </label>
+        <input id="txtNumeroBusqueda" type="text">
+    </p>
+    <p>
+    <input type="button" id="btnBusquedaLineal" value="Busqueda Lineal">
+    <input type="button" id="btnBusquedaBinaria" value="Busqueda Binaria">
+    </p>
+    
+    <!--HASTA AQUI DEBES DE TRABAJAR-->
+    
+    <script src="scripts/script.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>
